@@ -1,0 +1,59 @@
+<section id="allTeams" class="allTeams container-fluid mt-5">
+    <div class="container-fluid d-flex justify-content-between px-0">
+        <div class="col-lg-10 allTeamsBox p-3 h-100 mr-3">
+            <div class="container-fluid d-flex justify-content-between border-bottom ">
+                <h5>All Teams</h5>
+                <p>Showing 65 out of 65 teams</p>
+            </div>
+            <div>
+                <div class="row justify-content-around p-3">
+                    <% for (let i = 0; i < teams.length; i++) { %>
+                    <% if (teams[i].is_archived) { %>
+                    <div class="col-lg-4 p-0 box-size ">
+                        <div class="p-2">
+                            <div class="d-flex justify-content-around  border-left border-right border-top w-100 pt-2">
+                                <div class="text-center my-auto">
+                                    <img class="allTeams-profile  rounded-lg" src="<%= teams[i].image %>" alt="">
+                                </div>
+                                <div>
+                                    <h5> <%= teams[i].name %></h5>
+                                    <p>Created <%= teams[i].created_at %></p>
+                                </div>
+                                <% if(teams[i].is_favorited){ %>
+                                <i class="text-warning fas fa-star"></i>
+                                <% } else{ %>
+                                <i class="text-secondary far fa-star"></i>
+                                <% } %>
+                            </div>
+                            <p class="p-2 description border-left border-right m-0">
+                                <%= teams[i].description %></p>
+                            <div class="d-flex description  justify-content-between p-2 my-auto border">
+                                <img class="allTeam-icon" src="/image/icon-conversations-small.png" alt="">
+                                <p><%= teams[i].campaigns_count %> Campaigns</p>
+                                <img class="allTeam-icon" src="/image/icon-leads-small.png" alt="">
+                                <p><%= teams[i].leads_count %> Leads</p>
+                            </div>
+                        </div>
+                    </div>
+                    <% } %>
+                    <% } %>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-2 border-bottom allTeamsBox p-3 h-100">
+            <div class="border-bottom">
+                <h5>Activity</h5>
+            </div>
+            <% for (let i = 0; i < activities.length; i++) {%>
+            <div class="d-flex mt-3">
+                <img class="allTeamsPic mr-3 rounded-pill" src="<%=activities[i].person.avatar%>" alt="">
+                <div>
+                    <p> <span class="font-weight-bolder"><%=activities[i].person.name%></span> increase <span
+                            class="font-weight-bolder"><%=activities[i].target%></span>'s quota</p>
+                    <p><%=activities[i].created_at%></p>
+                </div>
+            </div>
+            <% } %>
+        </div>
+    </div>
+</section>

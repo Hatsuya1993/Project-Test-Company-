@@ -1,0 +1,127 @@
+/* Start .icon-color */
+
+.icon-color {
+  background-color: #042235;
+  width: 7.5vw;
+}
+
+/* End .icon-color */
+
+/* Start .sidebar-content */
+
+.sidebar-content {
+  background-color: #042235;
+  height: 100%;
+  position: relative;
+  width: 7.5vw !important;
+  background-image: cover;
+}
+
+/* End .sidebar-content */
+
+/* Start .font-content */
+
+.font-content {
+  color: #636e72;
+}
+
+/* End .font-content */
+
+/* Start .question */
+
+.question {
+  position: absolute;
+  bottom: 0;
+}
+
+/* End .question */
+
+/* Start .team-icon */
+
+.team-icon {
+  width: 50px;
+}
+
+/* End .team-icon */
+
+/* Start .sidebar-main */
+
+.sidebar-main {
+  width: 100px !important;
+}
+
+/* End .sidebar-main */
+
+/* Start .teams */
+
+.teams {
+  box-shadow: 0px 6px 10px -4px rgba(0, 0, 0, 0.28);
+}
+
+/* End .teams */
+
+/* Start .allTeamsBox */
+
+.allTeamsBox {
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.28);
+}
+
+/* End .allTeamsBox */
+
+/* Start .allTeamsPic */
+
+.allTeamsPic {
+  width: 50px;
+  height: 50px;
+}
+
+/* End .allTeamsPic */
+
+/* Start .allTeam-icon */
+
+.allTeam-icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* End .allTeam-icon */
+
+/* Start .allTeams-profile */
+
+.allTeams-profile {
+  width: 50%;
+}
+
+/* End .allTeams-profile */
+
+/* Start .description */
+
+.description {
+  max-height: 120px;
+}
+
+/* End .description */
+
+/* Start teams-content */
+
+.teams-content a {
+  text-decoration: none !important;
+  color: black;
+  /* no underline */
+}
+
+.teams-content a:hover {
+  color: #0083e3;
+  border-bottom: 2px solid #0083e3;
+  padding-bottom: 4px;
+}
+
+/* End teams-content */
+
+/* Start current-user */
+
+.current-user {
+  width: 10%;
+}
+
+/* End current-user */
